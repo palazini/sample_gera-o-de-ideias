@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%231E40AF'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-1.5c1.5-1.5 1.5-3.75 0-5.25S13.5 3.75 12 3.75s-3 1.125-3 2.625c0 1.5 1.5 3.75 1.5 5.25m0 5.25V18m0-5.25a2.25 2.25 0 0 0-2.25 2.25c0 1.312 1.006 2.5 2.25 2.5s2.25-1.188 2.25-2.5A2.25 2.25 0 0 0 12 12.75ZM12 18v-5.25' /%3E%3C/svg%3E" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geração de Ideias</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-primary': '#1E40AF',
+              'brand-secondary': '#3B82F6',
+              'brand-light': '#DBEAFE',
+              'brand-dark': '#1E3A8A',
+              'status-new': '#FBBF24',
+              'status-analysis': '#60A5FA',
+              'status-approved': '#34D399',
+              'status-implementation': '#A78BFA',
+              'status-implemented': '#4ADE80',
+              'status-rejected': '#F87171',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-50">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
